@@ -17,7 +17,7 @@ import {
   DEFAULT_SOL_AMOUNT,
   DEFAULT_RPC,
   DEFAULT_TITLE,
-  DEFAULT_AVATOR,
+  DEFAULT_AVATAR,
   DEFAULT_DESCRIPTION,
 } from "./const";
 
@@ -34,7 +34,7 @@ export const GET = async (req: Request) => {
     const payload: ActionGetResponse = {
       title: DEFAULT_TITLE,
       icon:
-        DEFAULT_AVATOR ?? new URL("/avator.jpg", requestUrl.origin).toString(),
+        DEFAULT_AVATAR ?? new URL("/avatar.jpg", requestUrl.origin).toString(),
       description: DEFAULT_DESCRIPTION,
       label: "Transfer", // this value will be ignored since `links.actions` exists
       links: {
