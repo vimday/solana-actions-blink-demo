@@ -17,6 +17,8 @@ import {
 import dotenv from "dotenv";
 dotenv.config();
 
+
+
 export const GET = (req: Request) => {
   const payload: ActionGetResponse = {
     icon: new URL("/solana_devs.jpg", new URL(req.url).origin).toString(),
